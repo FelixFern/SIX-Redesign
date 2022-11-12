@@ -1,0 +1,43 @@
+$accent-color: #1B8CFE;
+$green: #6DD400;
+$darkGray: #4E4E4E;
+
+.profileDropdown-parent {
+    display: flex;
+    height: 64px;
+    align-items: center;
+    column-gap: 10px;
+    cursor: pointer;
+    
+    &:hover {
+        .dropdown-icon {
+            transition: 0.25s ease;
+            opacity: .5;
+            transform: translateY(-2px);
+        }
+        .details h4{
+            transition: 0.25s ease;
+            opacity: .8;
+        }
+    }
+    i {
+        color: $accent-color;
+        font-size: 24px;
+        height: 24px;
+    }
+    .dropdown-icon {
+        transition: 0.25s ease;
+    }
+    .details {
+        line-height: 15px;
+        
+        h4 {
+            transition: 0.25s ease;
+            color: $accent-color;
+        }
+        p {
+            font-size: 14px;
+            color: $darkGray;
+        }
+    }
+}

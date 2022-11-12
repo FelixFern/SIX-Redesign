@@ -1,0 +1,30 @@
+// Declaring Variable
+$accent-color: #1B8CFE;
+$green: #6DD400;
+$darkGray: #4E4E4E;
+
+.home {
+    .hero-parent {
+        background-color: $accent-color;
+        
+        .hero-content {
+            padding: 40px 0px;
+            margin: auto;
+            width: 80vw;
+
+            h2 {
+                font-weight: 500;
+                color: white;
+            }
+            .name {
+                font-weight: 600;
+            }
+        }
+        
+    }
+    .main-content {
+        margin: auto;
+        width: 80vw;
+    }
+}
+
