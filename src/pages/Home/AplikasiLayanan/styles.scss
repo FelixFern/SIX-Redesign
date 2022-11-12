@@ -4,7 +4,7 @@ $green: #6DD400;
 $darkGray: #4E4E4E;
 
 .aplikasiLayanan-parent {
-    width: fit-content;
+    width: calc(60vw - 30px);
     box-sizing: border-box;
     padding: 15px 27px;
     background-color: white;
@@ -24,6 +24,11 @@ $darkGray: #4E4E4E;
             margin-right: 5px;
         }
         border-bottom: 1px solid #EAEAEA ;
+    }
+
+    .aplikasi-list {
+        display: flex;
+        justify-content: space-around ;
     }
 }
 
