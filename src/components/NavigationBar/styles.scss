@@ -1,0 +1,39 @@
+$accent-color: #1B8CFE;
+$green: #6DD400;
+$darkGray: #4E4E4E;
+
+.navbar-parent {
+    height: 64px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    vertical-align: middle;
+    display: flex;
+    
+    .navbar {
+        width: 80vw;
+        margin: auto;
+        display: flex; 
+        align-items: center;
+        justify-content: space-between;
+        
+        h2 {
+            font-weight: 600;
+            color: $accent-color;
+    
+            span {
+                color: $darkGray;
+            }
+        }
+
+        .right-component {
+            display: flex;
+            column-gap: 20px;
+            align-items: center;
+            
+            .seperator {
+                height: 30px;
+                width: 0.5px;
+                background-color: #EAEAEA;
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Source+Sans+Pro&display=swap');
+
+$accent-color: #1B8CFE;
+$green: #6DD400;
+$darkGray: #4E4E4E;
+
+* {
+    margin: 0;
+    padding: 0;    
+}
+
+html {
+    background-color: #FBFBFB;
+}
+body {
+    background-color: #FBFBFB;
+}
+
+h1, h2, h3, h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+}

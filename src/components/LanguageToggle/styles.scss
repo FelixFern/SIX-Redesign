@@ -1,0 +1,57 @@
+$accent-color: #1B8CFE;
+$green: #6DD400;
+$darkGray: #4E4E4E;
+
+.toggle-parent {
+    position: relative;
+    width: 70px;
+    height: 26px;
+    background-color: $accent-color;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    cursor: pointer;
+    
+    .text {
+        height: 100%;
+        width: fit-content;
+        margin: auto;
+        column-gap: 16px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        z-index: 1;
+        
+        h3 { 
+            font-size: 12px;
+            transition-delay: 0.5s;
+            transition: 0.2s;
+            color: $darkGray;
+        }
+        .enabled {
+            font-weight: 700;
+            transition-delay: 0.5s;
+            transition: 0.2s;
+            color: white;
+        }
+    }
+    
+    .toggle {
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        transition: 0.25s;
+        top: 0;
+        position: absolute;
+        width: 38px;
+        height: 26px;
+        border-radius: 30px;
+        background-color: white;
+    }
+    .enabled-id {
+        transition: 0.25s ease-out;
+        transform: translateX(28.5px);
+        padding: 0 2px;
+    }
+    .enabled-en {
+        transition: 0.25s ease-out;
+        transform: translateX(-1px);
+    }
+}
