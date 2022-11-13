@@ -1,0 +1,64 @@
+// Declaring Variable
+$accent-color: #1B8CFE;
+$green: #6DD400;
+$darkGray: #4E4E4E;
+
+
+.tandaiHadirModal-parent {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: 101;
+    overflow: hidden;
+    opacity: 1;
+
+    &.hide {
+        opacity: 0;
+        z-index: -101;
+    }
+    
+    
+    .black-bg {
+        transition-delay: 0.5s;
+        transition: 0.5s;
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        opacity: .5;
+        
+        &.hide {
+            transition-delay: 0.5s;
+            transition: 0.5s;
+            opacity: 0;
+        }
+    }
+
+    .modal-parent {
+        transition-delay: 0.5s;
+        transition: 0.5s;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 45vh;
+        width: 20vw;
+        padding: 30px 30px;
+        background-color: white;
+        border-radius: 10px;
+
+        &.hide {
+            transition-delay: 0.5s;
+            transition: 0.5s;
+            top: -100% !important; 
+        }
+
+        span {
+            color: $accent-color;
+        }
+
+        h4 {
+            margin-top: 20px;
+        }
+    }
+}

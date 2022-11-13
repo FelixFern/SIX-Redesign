@@ -1,6 +1,9 @@
+import { useContext } from 'react'
+import { tandaiHadirModalContext } from '../../../global/global-states'
 import './styles.scss'
 
 const JadwalBox = ({data, index, parentIndex} : any) => {
+    const {isOpen, setModal} = useContext(tandaiHadirModalContext)
     return (
         <div className={index === 0 && parentIndex === 0 ? 'jadwalBox-parent' : 'jadwalBox-parent muted'}>
             <div className="detail">
@@ -8,7 +11,11 @@ const JadwalBox = ({data, index, parentIndex} : any) => {
                 <p className='namaMK'>{data.namaMK}</p>
                 <p className='waktu'>{data.waktu}</p>
             </div>
-            <div className='tandaiHadir-btn'>
+            <div className='tandaiHadir-btn' onClick={
+                () => {
+                    setModal(!isOpen)
+                }
+            }>  
                 <h4>Tandai Hadir</h4>
             </div>
         </div>

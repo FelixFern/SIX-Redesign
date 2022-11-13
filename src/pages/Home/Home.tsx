@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import {AiFillCalendar} from 'react-icons/ai'
 
 import AplikasiLayanan from './AplikasiLayanan/AplikasiLayanan'
@@ -43,12 +44,26 @@ const jadwal = [
                 'namaMK': 'Pengantar Analisis Real', 
                 'waktu': '13.00-15.00'
             }, 
+            {
+                'kode': 'MA3131',
+                'namaMK': 'Pengantar Analisis Real', 
+                'waktu': '13.00-15.00'
+            }, 
+            {
+                'kode': 'MA3131',
+                'namaMK': 'Pengantar Analisis Real', 
+                'waktu': '13.00-15.00'
+            }, 
         ]
     }
 ]
 
 
 const Home = () => {
+    useEffect(() => {
+        document.title = "SIX | Sistem Informasi Akademik ITB"
+    }, [])
+    
     return (
         <div className='home'>
             <div className='hero-parent'>
