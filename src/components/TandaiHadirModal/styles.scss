@@ -53,12 +53,18 @@ $darkGray: #4E4E4E;
             top: -100% !important; 
         }
 
-        span {
-            color: $accent-color;
+        h3 {
+            padding-bottom: 10px;
+            border-bottom: 1px solid #EAEAEA ;
+
+            span {
+                color: $accent-color;
+            }
+
         }
 
         h4 {
-            margin-top: 20px;
+            margin-top: 10px;
         }
     }
 }

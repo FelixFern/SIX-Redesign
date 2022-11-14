@@ -32,6 +32,24 @@ $darkGray: #4E4E4E;
             display: flex;
             column-gap: 24px;
         }
+        
+        .row {
+            display: flex;
+            width: calc(60vw - 30px);
+            margin-top: 20px;
+            column-gap: 20px;
+            height: calc(100vh - 476px);
+
+            .row-left{ 
+                flex: 1.5;
+            }
+            .row-right {
+                flex: 6;
+                display: flex;
+                flex-direction: column;
+                row-gap: 20px;
+            }
+        }
     }
     .main-content-right {
         position: absolute;
@@ -53,7 +71,6 @@ $darkGray: #4E4E4E;
             width: calc(100% - 40px);
             margin: auto;
             margin-top: 104px;
-            padding-bottom: 200px;
             
             .title {
                 margin-left: auto;

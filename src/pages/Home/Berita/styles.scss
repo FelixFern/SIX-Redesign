@@ -1,0 +1,60 @@
+// Declaring Variable
+$accent-color: #1B8CFE;
+$green: #6DD400;
+$darkGray: #4E4E4E;
+
+.berita-parent {
+    overflow-y: auto;
+
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    padding: 15px 27px;
+    background-color: white;
+    border-radius: 10px;
+    height: 100%;
+
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+
+    .section-title {
+        width: 100%;
+        padding-bottom: 10px;
+        font-size: 14px;
+        border-bottom: 1px solid #EAEAEA;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background-color: $accent-color;
+            margin-right: 5px;
+        }
+    }
+    
+    .berita-list {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        height: 90%;
+
+
+
+        .berita { 
+            h3 {
+                font-size: 14px;
+                font-weight: 600;
+            }
+            h4 {
+                font-size: 12px;
+                font-weight: 500;
+            }
+            p {
+                font-size: 12px;
+                margin-top: 10px;
+            }
+        }
+    }
+}

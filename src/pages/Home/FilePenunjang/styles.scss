@@ -1,0 +1,66 @@
+// Declaring Variable
+$accent-color: #1B8CFE;
+$green: #6DD400;
+$darkGray: #4E4E4E;
+
+.filePenunjang-parent {
+    flex: 5;
+    overflow-y: auto;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    padding: 15px 27px;
+    background-color: white;
+    border-radius: 10px;
+
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+
+    .section-title {
+        width: 100%;
+        padding-bottom: 10px;
+        font-size: 14px;
+        border-bottom: 1px solid #EAEAEA;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background-color: $accent-color;
+            margin-right: 5px;
+        }
+    }
+    .filePenunjang-list {
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+        row-gap: 10px;
+        
+        .filePenunjang {
+
+            .filePenunjangBtn-parent {
+                text-decoration: none;
+                display: flex;
+                padding: 8px 16px;     
+                align-items: center;
+                column-gap: 10px;
+                box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+                box-sizing: border-box;
+                border-radius: 10px;
+                background-color: white;
+
+                i {
+                    color: $green;
+                    font-size: 20px;
+                    height: 20px;
+                }
+                h3 {
+                    color: black;
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
