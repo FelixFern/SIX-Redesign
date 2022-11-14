@@ -43,7 +43,6 @@ $darkGray: #4E4E4E;
         cursor: pointer;
         
         &:hover:not(& + .muted) {
-            transition: 0.5s ease;
             opacity: .8;
             transform: translateY(-1px);
         }

@@ -20,6 +20,14 @@ const TandaiHadirModal = () => {
                 <p>Selasa / 12 November 2022</p>
                 <h4>Catatan</h4>
                 <p>Selasa / 12 November 2022</p>
+                <div className="button-parent">
+                    <div className="button tandai-hadir">
+                        <h4>Tandai Hadir</h4>
+                    </div>
+                    <div className="button close" onClick={() => {setModal(!isOpen)}}>
+                        <h4>Tutup</h4>
+                    </div>
+                </div>
             </div>
         </div>
     )
